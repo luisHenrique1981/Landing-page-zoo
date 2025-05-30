@@ -175,26 +175,24 @@ header{
 
 }
 
-#fundo {
-    background-color: #3DB125;
+#partebaixo {
+    display: flex;
+    gap:50px;
     color: white;
     padding:100px 30px;
-    font-size: 26px;
     display: flex;
     flex-direction: column;
 }
 
-#partecima {
-    display: flex;
-    height: 200px;
-    gap: 40px;
-    align-items: flex-start;
-}
+#info1{
+    display: flex; 
+    background-color: #3DB125;
+    width:400px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
 
-
-#partebaixo {
-    display: flex;
-    gap:80px;
 }
 
 #mover{
@@ -316,7 +314,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 #titulo_animais{
@@ -326,7 +324,8 @@ header{
 
 #atracoes{
     display: flex;
-    gap:20px;
+    padding: 40px 0px;
+    gap: 20px;
 }
 
 #mamiferos{
@@ -340,7 +339,7 @@ header{
     transition: transform 0.3s ease;
 }
 
-#atracao-1{
+#atracao{
     color: white;
     font-size: 40px;
     margin-top: auto; 
@@ -361,13 +360,22 @@ header{
     transition: transform 0.3s ease;
 }
 
-#atracao-2{
-    color: white;
-    font-size: 40px;
-    margin-top: auto; 
+#repteis:hover {
+    transform: scale(1.05);
 }
 
-#repteis:hover {
+#aves{
+    background-image: url(../../img/aves.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#aves:hover{
     transform: scale(1.05);
 }
 
@@ -380,12 +388,6 @@ header{
     justify-content: space-between;
     padding: 10px;
     transition: transform 0.3s ease;
-}
-
-#atracao-3{
-    color: white;
-    font-size: 40px;
-    margin-top: auto; 
 }
 
 #aquario:hover {
@@ -403,12 +405,6 @@ header{
     transition: transform 0.3s ease; 
 }
 
-#atracao-4{
-    color: white;
-    font-size: 40px;
-    margin-top: auto; 
-}
-
 #museu:hover {
     transform: scale(1.05);
 }
@@ -417,3 +413,229 @@ header{
 
 /*---------------------------SEÇÃO INGRESSOS----------------------------*/
 
+#tickets{
+    background-color: #914F1E;
+}    
+
+#titulo-tickets{
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 40px 0px;
+}
+
+#ingressos{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 80px 0px;
+}
+
+#cartao{
+    background-color: white;
+    width:400px;
+    height: 600px;
+    gap: 10px;
+}
+
+#cartao > h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+#linha {
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+#texto-ingresso{
+    padding: 30px 0px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+
+}
+
+#compre {
+    background-color: #FFB200;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.3s ease; 
+}
+
+#compre:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
+#especifica{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+#adulto{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#crianca{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+#valor{
+    color:#3DB125;
+    font-weight: bold;
+}
+
+#texto-ingresso2{
+    padding: 36px 0px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+
+}
+
+
+
+
+/*---------------------------SEÇÃO PROJETOS----------------------------*/
+
+#titulo-projetos{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 40px 0px;
+}
+
+#projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+#projeto-info1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.voluntario{
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+#foto-projeto:hover{
+    transform: scale(1.05);
+}
+
+#paragrafo{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+
+/*---------------------------FOOTER----------------------------*/
+
+#rodape{
+    background-color: #1A4D2E;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#botoes{
+    display: flex;
+    gap: 20px;
+}
+
+#caixa-entrada{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+
+#enter{
+    width:100px;
+    height: 30px;
+    background-color: #3DB125;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#espaco{
+    display: flex;
+    justify-content: space-between;
+    padding:40px;
+}
+
+#linha2{
+    width: 1200px;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#meio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+#logo-rodape{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#final{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+
+#fim{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 40px;
+}
