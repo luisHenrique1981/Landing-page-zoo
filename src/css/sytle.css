@@ -1,0 +1,419 @@
+/*---------------------------GERAL----------------------------*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+/*---------------------------SEÇÃO HEADER----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+header{
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#logo {
+    display: flex;
+    color: #3DB125;
+    font-size: 24px;
+
+}
+
+#fonte {
+  font-family: "Kulim Park";
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #3DB125;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav-list{
+        display: none;
+    }
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile-nav .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+
+
+/*---------------------------SEÇÃO HOME----------------------------*/
+
+#home {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(../../img/fundo-hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#cta {
+    color: white;
+    font-size: 24px;
+    background-color: #3DB12599;
+    padding: 80px 20px;
+}
+
+#cta > h1 {
+    font-size: 80px;
+}
+
+
+#lontra {
+    font-size: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#banner{
+    position: relative;
+    bottom: 44px;
+    z-index: 2;
+}
+
+.banner-macaco {
+    top: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    
+}
+
+
+
+/*---------------------------SEÇÃO SOBRE NOS----------------------------*/
+
+#about {
+    display: flex;
+    padding: 100px 0px;
+    justify-content: space-around;
+}
+
+#titulo-sobre {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#texto > h2 {
+    font-size: 60px;
+}
+
+#texto > p {
+    font-size: 20px;
+}
+
+#mais:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+
+}
+
+#fundo {
+    background-color: #3DB125;
+    color: white;
+    padding:100px 30px;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+#partecima {
+    display: flex;
+    height: 200px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+#partebaixo {
+    display: flex;
+    gap:80px;
+}
+
+#mover{
+    justify-items: center;
+}
+
+
+/*---------------------------SEÇÃO IMAGENS----------------------------*/
+
+#galery{
+    background-color: #1A4D2E;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-titulo{
+    text-align: center;
+    padding: 20px;
+}
+
+#img-titulo > h1 {
+    color:white;
+    font-size: 40px;
+}
+
+#bloco-imagens{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+#bloco-img-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-2{
+    width: 400px;
+    height: auto;
+}
+
+.area-8{
+    width: auto;
+    height: 466px;
+}
+
+#bloco-img-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-3{
+    width: 400px;
+    height: auto;
+}
+
+.area-9{
+    width: 400px;
+    height: auto;
+}
+
+#bloco-img-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-4{
+    width: 400px;
+    height: auto;
+}
+
+.area-10{
+    width: auto;
+    height: 500px;
+}
+
+#bloco-img-4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-11{
+    width: auto;
+    height: 542px;
+}
+
+.area-6{
+    width: 400px;
+    height: auto;
+}
+
+#bloco-img-5{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-5{
+    width: 400px;
+    height: auto;
+}
+
+.area-12{
+    width: auto;
+    height: 500px;
+}
+
+
+
+
+/*---------------------------SEÇÃO ATRAÇÕES----------------------------*/
+
+#animals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#titulo_animais{
+    text-align: center;
+    font-size: 40px;
+}
+
+#atracoes{
+    display: flex;
+    gap:20px;
+}
+
+#mamiferos{
+    background-image: url(../../img/mamifero.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#atracao-1{
+    color: white;
+    font-size: 40px;
+    margin-top: auto; 
+}
+
+#mamiferos:hover {
+    transform: scale(1.05);
+}
+
+#repteis{
+    background-image: url(../../img/Repteis.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#atracao-2{
+    color: white;
+    font-size: 40px;
+    margin-top: auto; 
+}
+
+#repteis:hover {
+    transform: scale(1.05);
+}
+
+#aquario{
+    background-image: url(../../img/aquario.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#atracao-3{
+    color: white;
+    font-size: 40px;
+    margin-top: auto; 
+}
+
+#aquario:hover {
+    transform: scale(1.05);
+}
+
+#museu{
+    background-image: url(../../img/museu.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: transform 0.3s ease; 
+}
+
+#atracao-4{
+    color: white;
+    font-size: 40px;
+    margin-top: auto; 
+}
+
+#museu:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*---------------------------SEÇÃO INGRESSOS----------------------------*/
+
