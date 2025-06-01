@@ -160,10 +160,26 @@ header{
     }
 }
 
+/*Celulares maiores*/
+@media(max-width: 640px){
 
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
 
+    #banner{
+        display: none;
+    }
 
-
+    #cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
 
 /*---------------------------SEÇÃO SOBRE NOS----------------------------*/
 
@@ -273,6 +289,35 @@ header{
     }
    
 }
+
+/*Celulares maiores*/
+@media(max-width: 640px){
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-sobre{
+        display: flex;
+        justify-content: center;
+    }
+
+    #texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;;
+    }
+
+    #partebaixo {
+    display: flex;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+}
+
 
 
 /*---------------------------SEÇÃO IMAGENS----------------------------*/
@@ -502,6 +547,14 @@ header{
 
 }
 
+/*Celulares maiores*/
+@media(max-width: 640px){
+     #atracoes{
+        overflow-x: auto;
+    }
+
+}
+
 
 
 /*---------------------------SEÇÃO INGRESSOS----------------------------*/
@@ -527,14 +580,14 @@ header{
     padding: 60px 0px;
 }
 
-#cartao{
+.cartao{
     background-color: white;
     width:400px;
     height: 600px;
     gap: 10px;
 }
 
-#cartao > h3{
+.cartao > h3{
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -624,8 +677,8 @@ header{
         padding:20px;
     }
 
-    #cartao {
-        width:auto;
+    .cartao {
+        width: 350px;
         height: auto;
     }
 
@@ -642,6 +695,18 @@ header{
         font-size: 30px;
     }
 }
+
+/*Celulares maiores*/
+@media(max-width: 640px){
+     #ingressos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
 
 
 /*---------------------------SEÇÃO PROJETOS----------------------------*/
@@ -741,6 +806,44 @@ header{
     text-align: justify;
 }
 }
+
+/*Celulares maiores*/
+@media(max-width: 640px){
+     #projetos{
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        gap:80px;
+    }
+
+    #projeto-info1{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    .projeto-info{
+        display: flex;
+        gap: 20px;
+    }
+
+    #paragrafo-doacao{
+        text-align: justify;
+    }
+
+    #projeto-info3{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    #foto-projeto{
+        display: flex;
+        object-fit: contain;
+    }
+
+}
+
 
 
 
@@ -869,3 +972,39 @@ header{
 }
 
 }
+
+/*Celulares maiores*/
+@media(max-width: 640px){
+     #espaco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+     }
+
+     #linha2{
+        width: 500px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+    #meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:60px;
+
+    }
+
+    #fim{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
+}
+
+}
+
