@@ -3,6 +3,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+outline-color: red;
 }
 
 
@@ -12,7 +13,11 @@ box-sizing: border-box;
 
 header{
     width: 100%;
-    padding: 28px 8%;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
 }
 
 #logo {
@@ -24,6 +29,7 @@ header{
 
 #fonte {
   font-family: "Kulim Park";
+  text-transform: uppercase;
 }
 
 #navbar{
@@ -139,13 +145,31 @@ header{
     
 }
 
+/*Celular*/
+@media(max-width: 450px) {
+    #cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #banner{
+        display: block;
+    }
+}
+
+
+
+
 
 
 /*---------------------------SEÇÃO SOBRE NOS----------------------------*/
 
 #about {
     display: flex;
-    padding: 100px 0px;
+    padding: 80px 0px;
     justify-content: space-around;
 }
 
@@ -157,7 +181,9 @@ header{
 #texto {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding:40px;
+    gap:12px;
 
 }
 
@@ -165,13 +191,18 @@ header{
     font-size: 60px;
 }
 
-#texto > p {
+#texto-sobre{
     font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
 }
 
 #mais:hover{
     font-weight: bold;
     transform: scale(1.05);
+    cursor: pointer;
 
 }
 
@@ -192,11 +223,55 @@ header{
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
+    padding:20px;
+    gap:20px;
 
 }
 
 #mover{
     justify-items: center;
+}
+
+/*Celular*/
+@media(max-width: 450px) {
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-sobre{
+        justify-content: center;
+    }
+
+    #texto{
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+
+    #texto-sobre{
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+
+    #partebaixo {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #info1{
+        display: flex;
+        width: auto;
+        height: 100px;
+        padding: 20px;
+        gap:20px;
+        
+    }
+   
 }
 
 
@@ -213,7 +288,7 @@ header{
     padding: 20px;
 }
 
-#img-titulo > h1 {
+#img-titulo > h2 {
     color:white;
     font-size: 40px;
 }
@@ -314,7 +389,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px 20px;
+    padding: 70px 20px;
+    height: 960px;
 }
 
 #titulo_animais{
@@ -324,7 +400,7 @@ header{
 
 #atracoes{
     display: flex;
-    padding: 40px 0px;
+    padding: 10px 0px;
     gap: 20px;
 }
 
@@ -347,6 +423,7 @@ header{
 
 #mamiferos:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #repteis{
@@ -362,6 +439,7 @@ header{
 
 #repteis:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #aves{
@@ -377,6 +455,7 @@ header{
 
 #aves:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #aquario{
@@ -392,6 +471,7 @@ header{
 
 #aquario:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #museu{
@@ -407,6 +487,19 @@ header{
 
 #museu:hover {
     transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*Celular*/
+@media(max-width: 450px) {
+    #titulo_animais{
+        font-size: 30px;
+    }
+
+    #atracoes{
+        overflow-x: auto;
+    }
+
 }
 
 
@@ -415,6 +508,8 @@ header{
 
 #tickets{
     background-color: #914F1E;
+    
+    padding: 60px 0px;
 }    
 
 #titulo-tickets{
@@ -422,14 +517,14 @@ header{
     display: flex;
     justify-content: center;
     font-size: 40px;
-    padding: 40px 0px;
+
 }
 
 #ingressos{
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
-    padding: 80px 0px;
+    padding: 60px 0px;
 }
 
 #cartao{
@@ -439,7 +534,7 @@ header{
     gap: 10px;
 }
 
-#cartao > h2{
+#cartao > h3{
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -481,6 +576,7 @@ header{
     background-color: red;
     color: white;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #especifica{
@@ -505,6 +601,7 @@ header{
 #valor{
     color:#3DB125;
     font-weight: bold;
+    font-size: 26px;
 }
 
 #texto-ingresso2{
@@ -518,7 +615,33 @@ header{
 
 }
 
+/*Celular*/
+@media(max-width: 450px) {
+    #ingressos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:20px;
+    }
 
+    #cartao {
+        width:auto;
+        height: auto;
+    }
+
+    #texto-ingresso,
+    #texto-ingresso2{
+        font-size: 24px;
+    }
+
+    #especifica{
+        font-size: 24px;
+    }
+
+    #valor{
+        font-size: 30px;
+    }
+}
 
 
 /*---------------------------SEÇÃO PROJETOS----------------------------*/
@@ -527,7 +650,7 @@ header{
     display: flex;
     justify-content: center;
     font-size: 40px;
-    padding: 40px 0px;
+    padding: 60px 0px;
 }
 
 #projetos{
@@ -535,9 +658,11 @@ header{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 40px 0px;
+    padding: 40px;
 }
 
+.projeto-info,
+#projeto-info3,
 #projeto-info1{
     display: flex;
     justify-content: space-around;
@@ -551,12 +676,70 @@ header{
 
 #foto-projeto:hover{
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #paragrafo{
     display: flex;
     flex-direction: column;
     gap: 18px;
+}
+
+#paragrafo-doacao{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: right;
+    align-items: flex-end;
+}
+
+/*Celular*/
+@media(max-width: 450px) {
+    #projetos{
+        display: flex;
+        flex-direction: column;
+       padding:0px;
+    }
+
+    #titulo-projetos{
+        padding:40px 0px;
+    }
+
+    #paragrafo{
+        text-align: justify;
+        gap:20px;
+    }
+
+    #projeto-info1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:20px;
+        gap: 30px;
+    }
+
+    .projeto-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px;
+        gap: 30px;
+    }
+
+    #projeto-info3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:20px;
+        gap: 30px;
+    }
+
+    #paragrafo-doacao{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: justify;
+}
 }
 
 
@@ -638,4 +821,51 @@ header{
     justify-content: space-between;
     color:white;
     padding: 40px;
+}
+
+/*Celular*/
+@media(max-width: 450px) {
+    #espaco{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+
+    }
+
+    #footer-info{
+        font-size: 24px;
+        text-align: justify;
+    }
+
+    #linha2{
+    width: 300px;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+
+    }
+
+    #meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap:60px;
+
+    }
+
+    #final{
+        gap:30px;
+    }
+
+    #fim{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    padding: 20px;
+    gap:40px;
+    align-items: center;
+}
+
 }

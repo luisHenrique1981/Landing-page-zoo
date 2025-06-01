@@ -13,14 +13,14 @@
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-hippo" id="logo"><p id="fonte"> PLANETA BICHO</p></i>
+            <i class="fa-solid fa-hippo" id="logo"><p id="fonte"> planeta bicho</p></i>
             <ul id="nav-list">
-                <li class="nav-item active"><a href="home">Inicio</a></li>
-                <li class="nav-item"><a href="about">Sobre Nos</a></li>
-                <li class="nav-item"><a href="galery">Galeria</a></li>
-                <li class="nav-item"><a href="animals">Animais</a></li>
-                <li class="nav-item"><a href="tickets">Ingressos</a></li>
-                <li class="nav-item"><a href="projects">Projetos</a></li>
+                <li class="nav-item active"><a href="#home" tabindex="1">Inicio</a></li>
+                <li class="nav-item"><a href="#about" tabindex="2">Sobre Nos</a></li>
+                <li class="nav-item"><a href="#galery" tabindex="3">Galeria</a></li>
+                <li class="nav-item"><a href="#animals" tabindex="4">Animais</a></li>
+                <li class="nav-item"><a href="#tickets" tabindex="5">Ingressos</a></li>
+                <li class="nav-item"><a href="#projects" tabindex="6">Projetos</a></li>
             </ul>
             <button id="mobile-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -30,12 +30,12 @@
 
             <div id="mobile-menu">
                 <ul id="mobile-nav">
-                    <li class="nav-item"><a href="home">Inicio</a></li>
-                    <li class="nav-item"><a href="about">Sobre Nos</a></li>
-                    <li class="nav-item"><a href="galery">Galeria</a></li>
-                    <li class="nav-item"><a href="animals">Animais</a></li>
-                    <li class="nav-item"><a href="tickets">Ingressos</a></li>
-                    <li class="nav-item"><a href="projects">Projetos</a></li>
+                    <li class="nav-item"><a href="#home">Inicio</a></li>
+                    <li class="nav-item"><a href="#about">Sobre Nos</a></li>
+                    <li class="nav-item"><a href="#galery">Galeria</a></li>
+                    <li class="nav-item"><a href="#animals">Animais</a></li>
+                    <li class="nav-item"><a href="#tickets">Ingressos</a></li>
+                    <li class="nav-item"><a href="#projects">Projetos</a></li>
                 </ul>
             </div>
     </header>
@@ -47,24 +47,26 @@
                     <i class="fa-solid fa-otter" id="lontra"></i>
                 </div>
                 <p>Bem vindo ao</p>
-                <h1>PLANETA BICHO</h1>
+                <h1 style="text-transform: uppercase;">planeta bicho</h1>
                 <p>Uma jornada selvagem pela vida na terra!</p>
                 <p sytle="text-align:justify;">Prepare-se para viver uma aventura inesquecível! O <br>Planeta Bicho é um zoológico temático onde a natu-<br>reza ganha vida. Aqui você encontra animais de to-<br>dos os continentes e eras — dos gigantes do mundo<br> pré-histórico aos habitantes mais exóticos das flore-<br>stas tropicais.</p>
             </div>
             <div id="banner">
-                <img class="banner-macaco" src="./img/macaco-hero.png" alt="macaco">
+                <img class="banner-macaco" src="./img/macaco-hero.png" alt="foto de um macaco">
             </div>
         </section>
 
         <section id="about">
             <div id="texto">
-                <div>
+                <div id="titulo-sobre">
                     <h2 style="font-size: 50px;">Sobre nós</h2>
                 </div>
-                <p>Bem-vindo ao Zoológico Planeta Bicho, um espaço dedicado à preservação,<br> educação e conexão entre pessoas e a natureza. Desde nossa fundação, temos<br> o compromisso de proporcionar uma experiência única aos visitantes, combi<br>nando lazer, aprendizado e conscientização ambiental. Nosso zoológico abri<br>ga mais de 200 espécies de animais de diferentes continentes, todos cuidados<br> com carinho por uma equipe especializada em bem<br>estar animal e conservação.</p>
-                <p>Mais do que um local para conhecer animais, somos um centro de preservação,<br> pesquisa e encantamento. Nosso time é formado por biólogos, veterinários e <br>educadores apaixonados por transformar cada visita em uma oportunidade de <br>aprendizado e inspiração. Além das exposições, contamos com espaços temáti<br>cos, áreas interativas, programas de apadrinhamento de animais e eventos espe<br>ciais ao longo do ano. Tudo pensado para proporcionar momentos únicos para<br> todas as idades. Seja em família, com amigos ou em grupos escolares, sua visi<br>ta ao Zoológico Planeta Bicho será uma experiência memorável e transformadora.</p>
+                <div id="texto-sobre">
+                    <p>Bem-vindo ao Zoológico Planeta Bicho, um espaço dedicado à preservação, educação e conexão entre pessoas e a natureza. Desde nossa fundação, temos o compromisso de proporcionar uma experiência única aos visitantes, combinando lazer, aprendizado e conscientização ambiental. Nosso zoológico abriga mais de 200 espécies de animais de diferentes continentes, todos cuidados com carinho por uma equipe especializada em bemestar animal e conservação.</p>
+                    <p>Mais do que um local para conhecer animais, somos um centro de preservação, pesquisa e encantamento. Nosso time é formado por biólogos, veterinários e educadores apaixonados por transformar cada visita em uma oportunidade de aprendizado e inspiração. Além das exposições, contamos com espaços temáticos, áreas interativas, programas de apadrinhamento de animais e eventos especiais ao longo do ano. Tudo pensado para proporcionar momentos únicos para todas as idades. Seja em família, com amigos ou em grupos escolares, sua visita ao Zoológico Planeta Bicho será uma experiência memorável e transformadora.</p>
+                </div>
                 <div  style="display: flex; gap:10px;">
-                    <p id="mais" style="font-size: 20px;">Saiba mais</p>
+                    <p id="mais" style="font-size: 20px;" tabindex="7">Saiba mais</p>
                     <i class="fa-solid fa-arrow-left-long" style="font-size: 18px; display: flex; align-items: flex-end;"></i>
                 </div>
             </div>
@@ -74,21 +76,21 @@
                         <i class="fa-solid fa-user-group" style="font-size: 40px;"></i>
                         <div>
                             <p style="font-size: 20px;">+8000 visitantes</p>
-                            <p>Recebemos visitantes todos os dias há mais de <br>10 anos, de todos os lugares do mundo!</p>
+                            <p>Recebemos visitantes todos os dias há mais de 10 anos, de todos os lugares do mundo!</p>
                         </div>
                     </div>
                     <div id="info1">  
                         <i class="fa-solid fa-globe" style="font-size: 40px;"></i>
                         <div>
                             <p style="font-size: 20px;">10 parques pelo mundo</p>
-                            <p>Temos parques ao redor do mundo! Na inglaterra,<br> China, Brasil, Argentina, etc</p>
+                            <p>Temos parques ao redor do mundo! Na inglaterra, China, Brasil, Argentina, etc</p>
                         </div>
                     </div>
                     <div id="info1" style="display: flex; background-color: #3DB125;">
-                        <i class="fa-solid fa-frog" style="font-size: 40px;"></i>
+                        <i class="fa-solid fa-otter" style="font-size: 40px;"></i>
                         <div>
                             <p style="font-size: 20px;">+20 atrações</p>
-                            <p>Temos atrações de todos os tipos. Animais terres<br>tres, Aves, Repteis e Aquáticos!</p>
+                            <p>Temos atrações de todos os tipos. Animais terrestres, Aves, Repteis e Aquáticos!</p>
                         </div>
                     </div>
                 </div>
@@ -97,38 +99,38 @@
 
         <section id="galery">
             <div id="img-titulo">
-                <h1>Imagens</h1>
+                <h2>Imagens</h2>
             </div>
-            <div id="bloco-imagens">
+            <div id="bloco-imagens" tabindex="8">
                 <div id="bloco-img-1">
-                    <img class="area-2" src="/img/area-zoo-2.jpg" alt="area-zoo-4">
-                    <img class="area-8" src="/img/area-zoo-8.jpg" alt="area-zoo-8">
+                    <img class="area-2" src="/img/area-zoo-2.jpg" alt="foto-area-zoo-4">
+                    <img class="area-8" src="/img/area-zoo-8.jpg" alt="foto-area-zoo-8">
                 </div>
                 <div id="bloco-img-2">
-                    <img class="area-9" src="/img/area-zoo-9.jpg" alt="area-zoo-9">
-                    <img class="area-3" src="/img/area-zoo-3.jpg" alt="area-zoo-3">
+                    <img class="area-9" src="/img/area-zoo-9.jpg" alt="foto-area-zoo-9">
+                    <img class="area-3" src="/img/area-zoo-3.jpg" alt="foto-area-zoo-3">
                 </div>
                 <div id="bloco-img-3">
-                    <img class="area-4" src="/img/area-zoo-4.jpg" alt="area-zoo-4">
-                    <img class="area-10" src="/img/area-zoo-10.jpg" alt="area-zoo-10">
+                    <img class="area-4" src="/img/area-zoo-4.jpg" alt="foto-area-zoo-4">
+                    <img class="area-10" src="/img/area-zoo-10.jpg" alt="foto-area-zoo-10">
                 </div>
                 <div id="bloco-img-4">
-                    <img class="area-11" src="/img/area-zoo-11.jpg" alt="area-zoo-11">
-                    <img class="area-6" src="/img/area-6.jpg" alt="area-zoo-6">
+                    <img class="area-11" src="/img/area-zoo-11.jpg" alt="foto-area-zoo-11">
+                    <img class="area-6" src="/img/area-6.jpg" alt="foto-area-zoo-6">
                 </div>
                 <div id="bloco-img-5">
-                    <img class="area-5" src="/img/area-zoo-5.jpg" alt="area-zoo-5">
-                    <img class="area-12" src="/img/area-zoo-12.jpg" alt="area-zoo-12">
+                    <img class="area-5" src="/img/area-zoo-5.jpg" alt="foto-area-zoo-5">
+                    <img class="area-12" src="/img/area-zoo-12.jpg" alt="foto-area-zoo-12">
                 </div>
             </div>
         </section>
 
         <section id="animals">
             <div id="titulo_animais">
-                <h1>Conheça nossas atrações</h1>
+                <h2>Conheça nossas atrações</h2>
             </div>
             <div id="atracoes">
-                <div id="mamiferos">
+                <div id="mamiferos" tabindex="9">
                     <div id="atracao">
                         <h3>Mamiferos</h3>
                     </div>
@@ -136,7 +138,7 @@
                         <i class="fa-solid fa-up-right-from-square" style="color:white"></i>
                     </div>
                 </div>
-                <div id="repteis">
+                <div id="repteis" tabindex="10">
                     <div id="atracao">
                         <h3>Repteis</h3>
                     </div>
@@ -144,7 +146,7 @@
                         <i class="fa-solid fa-up-right-from-square" style="color:white"></i>
                     </div>
                 </div>
-                <div id="aves">
+                <div id="aves" tabindex="11">
                     <div id="atracao">
                         <h3>Aves</h3>
                     </div>
@@ -152,7 +154,7 @@
                         <i class="fa-solid fa-up-right-from-square" style="color:white"></i>
                     </div>
                 </div>
-                <div id="aquario">
+                <div id="aquario" tabindex="12">
                     <div id="atracao">
                         <h3>Aquário</h3>
                     </div>
@@ -160,7 +162,7 @@
                         <i class="fa-solid fa-up-right-from-square" style="color:white"></i>
                     </div>
                 </div>
-                <div id="museu">
+                <div id="museu" tabindex="13">
                     <div id="atracao">
                         <h3>Museu</h3>
                     </div>
@@ -173,11 +175,11 @@
 
         <section id="tickets">
             <div id="titulo-tickets">
-                <h1>Ingressos</h1>
+                <h2>Ingressos</h>
             </div>
             <div id="ingressos">
                 <div id="cartao">
-                    <h2>Normal</h2>
+                    <h3>Normal</h3>
                     <div id="linha">
 
                     </div>
@@ -189,13 +191,13 @@
                         <p>- Participação em horários fixos de alimentação de alguns animais</p>
                         <p>- Estacionamento gratuito</p>
                     </div>
-                    <div id="compre">
+                    <div id="compre" tabindex="14">
                         <h3>Compre Agora!</h3>
                     </div>
                     <div id="especifica">
                         <div id="adulto">
                             <div>
-                                <h4>ADULTO</h4>
+                                <h4 style="text-transform: uppercase;">adulto</h4>
                                 <p>+12 anos</p>
                             </div>
                             <div>
@@ -204,7 +206,7 @@
                         </div>
                         <div id="crianca">
                             <div>
-                                <h4>CRIANÇA</h4>
+                                <h4 style="text-transform: uppercase;">criança</h4>
                                 <p>-12 anos</p>
                             </div>
                             <div>
@@ -214,7 +216,7 @@
                     </div>
                 </div>
                 <div id="cartao">
-                    <h2>Vip</h2>
+                    <h3>Vip</h3>
                     <div id="linha">
 
                     </div>
@@ -227,13 +229,13 @@
                         <p>- Tour noturno vip</p>
                         <p>- Foto personalizada</p>
                     </div>
-                    <div id="compre">
+                    <div id="compre" tabindex="15">
                         <h3>Compre Agora!</h3>
                     </div>
                     <div id="especifica">
                         <div id="adulto">
                             <div>
-                                <h4>ADULTO</h4>
+                                <h4 style="text-transform: uppercase;">adulto</h4>
                                 <p>+12 anos</p>
                             </div>
                             <div>
@@ -242,7 +244,7 @@
                         </div>
                         <div id="crianca">
                             <div>
-                                <h4>CRIANÇA</h4>
+                                <h4 style="text-transform: uppercase;">criança</h4>
                                 <p>-12 anos</p>
                             </div>
                             <div>
@@ -257,55 +259,55 @@
 
         <section id="projects">
             <div id="titulo-projetos">
-                <h1>Projetos</h1>
+                <h2>Projetos</h2>
             </div>
             <div id="projetos">
                 <div id="projeto-info1">
                     <div id="paragrafo">
                         <h3 style="font-size: 24px;">Seja um voluntário</h3>
                         <p style="font-size: 20px;">Você pode fazer a diferença doando seu tempo e carinho aos animais. Como 
-                        voluntário,<br> você contribui com ações de cuidado, educação ambiental e apoio 
-                        em eventos. É uma<br> forma de aprender mais sobre a natureza enquanto ajuda 
-                        a protegê-la. Junte-se a nós e<br> faça parte dessa transformação!</p>
+                        voluntário, você contribui com ações de cuidado, educação ambiental e apoio 
+                        em eventos. É uma forma de aprender mais sobre a natureza enquanto ajuda 
+                        a protegê-la. Junte-se a nós e faça parte dessa transformação!</p>
                         <div  style="display: flex; gap:10px;">
-                            <p id="mais" style="font-size: 20px;">Saiba mais</p>
+                            <p id="mais" style="font-size: 20px;" tabindex="16">Saiba mais</p>
                             <i class="fa-solid fa-arrow-left-long" style="font-size: 18px; display: flex; align-items: flex-end;"></i>
                         </div>
                     </div>
                     <div id="foto-projeto">
-                        <img class="voluntario" src="/img/voluntario.jpg" alt="voluntário">
+                        <img class="voluntario" src="/img/voluntario.jpg" alt="foto de um voluntário">
                     </div>
                 </div>
-                <div id="projeto-info1">
+                <div class="projeto-info">
                     <div id="foto-projeto">
-                        <img class="voluntario" src="/img/doacao.jpg" alt="Dinheiro">
+                        <img class="voluntario" src="/img/doacao.jpg" alt="Foto de uma carteira com dinheiro">
                     </div>
-                    <div id="paragrafo">
-                        <h3 style="text-align: end; font-size: 24px;">Doe para uma causa</h3>
+                    <div id="paragrafo-doacao">
+                        <h3 style="font-size: 24px;">Doe para uma causa</h3>
                         <p style="font-size: 20px;">Você pode fazer a diferença doando seu tempo e carinho aos animais. Como 
-                        voluntário,<br> você contribui com ações de cuidado, educação ambiental e apoio 
-                        em eventos. É uma<br> forma de aprender mais sobre a natureza enquanto ajuda 
-                        a protegê-la. Junte-se a nós e<br> faça parte dessa transformação!</p>
+                        voluntário, você contribui com ações de cuidado, educação ambiental e apoio 
+                        em eventos. É uma forma de aprender mais sobre a natureza enquanto ajuda 
+                        a protegê-la. Junte-se a nós e faça parte dessa transformação!</p>
                         <div  style="display: flex; gap:10px;">
-                            <p id="mais" style="font-size: 20px;">Saiba mais</p>
+                            <p id="mais" style="font-size: 20px;" tabindex="17">Saiba mais</p>
                             <i class="fa-solid fa-arrow-left-long" style="font-size: 18px; display: flex; align-items: flex-end;"></i>
                         </div>
                     </div>
                 </div>
-                <div id="projeto-info1">
+                <div id="projeto-info3">
                     <div id="paragrafo">
                         <h3 style="font-size: 24px;">Conheça alguns projetos</h3>
                         <p style="font-size: 20px;">Você pode fazer a diferença doando seu tempo e carinho aos animais. Como 
-                        voluntário,<br> você contribui com ações de cuidado, educação ambiental e apoio 
-                        em eventos. É uma<br> forma de aprender mais sobre a natureza enquanto ajuda 
-                        a protegê-la. Junte-se a nós e<br> faça parte dessa transformação!</p>
+                        voluntário, você contribui com ações de cuidado, educação ambiental e apoio 
+                        em eventos. É uma forma de aprender mais sobre a natureza enquanto ajuda 
+                        a protegê-la. Junte-se a nós e faça parte dessa transformação!</p>
                         <div  style="display: flex; gap:10px;">
-                            <p id="mais" style="font-size: 20px;">Saiba mais</p>
+                            <p id="mais" style="font-size: 20px;" tabindex="18">Saiba mais</p>
                             <i class="fa-solid fa-arrow-left-long" style="font-size: 18px; display: flex; align-items: flex-end;"></i>
                         </div>
                     </div>
                     <div id="foto-projeto">
-                        <img class="voluntario" src="/img/pesquisa.jpg" alt="pesquisa">
+                        <img class="voluntario" src="/img/pesquisa.jpg" alt="Foto de uma cientista fazendo uma análise">
                     </div>
                 </div>
             </div>
@@ -313,8 +315,8 @@
     </main>
     <footer id="rodape">
         <div id="espaco">
-            <div>
-                <h3 style="color:white; font-weight: bold;">Cadastre-se na nossa Newsletter para saber mais sobre animais<br> novos, novidades do parque e muito mais!</h3>
+            <div id="footer-info">
+                <h3 style="color:white; font-weight: bold;">Cadastre-se na nossa Newsletter para saber mais sobre animais novos, novidades do parque e muito mais!</h3>
             </div>
             <div id="botoes">
                 <div id="caixa-entrada">
@@ -329,7 +331,7 @@
         <div id="meio">
             <div id="logo-rodape">
                 <i class="fa-solid fa-otter" style="font-size: 120px;"></i>
-                <div style="font-size:32px;">PLANETA BICHO</div>
+                <div style="font-size:32px; text-transform: uppercase;">planeta bicho</div>
             </div>
             <div style="display: flex; gap: 40px; color:white;">
                 <div id="final">
