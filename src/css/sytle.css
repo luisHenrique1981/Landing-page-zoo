@@ -96,6 +96,21 @@ header{
 }
 
 
+/*Laptops*/
+@media(min-width: 1024px){
+
+    #nav-list{
+        display: block;
+        display: flex;
+    }
+
+    #mobile-btn{
+        display: none;
+    }
+    
+}
+
+
 
 /*---------------------------SEÇÃO HOME----------------------------*/
 
@@ -180,6 +195,46 @@ header{
         text-align: center;
     }
 }
+
+/*Tablets*/
+@media(max-width: 768px){
+
+    #home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    #cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/*Laptops*/
+@media(max-width: 1024px){
+
+    #cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    
+}
+
 
 /*---------------------------SEÇÃO SOBRE NOS----------------------------*/
 
@@ -318,6 +373,33 @@ header{
 
 }
 
+/*Tablets*/
+@media(max-width: 768px){
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-sobre{
+        display: flex;
+        justify-content: center;
+    }
+
+    #texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;;
+    }
+
+    #partebaixo {
+    display: flex;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+}
 
 
 /*---------------------------SEÇÃO IMAGENS----------------------------*/
@@ -555,6 +637,22 @@ header{
 
 }
 
+/*Tablets*/
+@media(max-width: 768px){
+     #atracoes{
+        overflow-x: auto;
+    }
+
+}
+
+/*Laptops*/
+@media(max-width: 1024px){
+
+    #atracoes{
+        overflow-x: auto;
+    }
+}
+
 
 
 /*---------------------------SEÇÃO INGRESSOS----------------------------*/
@@ -707,6 +805,17 @@ header{
 
 }
 
+/*Tablets*/
+@media(max-width: 768px){
+     #ingressos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+}
+
 
 
 /*---------------------------SEÇÃO PROJETOS----------------------------*/
@@ -843,6 +952,93 @@ header{
     }
 
 }
+
+/*Tablets*/
+@media(max-width: 768px){
+     #projetos{
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+    }
+
+    #projeto-info1{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    .projeto-info{
+        display: flex;
+        gap: 20px;
+    }
+
+    #paragrafo-doacao{
+        text-align: justify;
+    }
+
+    #projeto-info3{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    #foto-projeto{
+        display: flex;
+        object-fit: contain;
+    }
+
+}
+
+/*Laptops*/
+@media(max-width: 1024px){
+
+    #projetos{
+        display: flex;
+        flex-direction: column;
+        
+        gap:80px;
+    }
+
+    #projeto-info1{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    .projeto-info{
+        display: flex;
+        gap: 20px;
+    }
+
+    #paragrafo-doacao{
+        text-align: justify;
+    }
+
+    #projeto-info3{
+        display: flex;
+        gap: 20px;
+        text-align: justify;
+    }
+
+    #foto-projeto{
+        display: flex;
+        object-fit: contain;
+    }
+}
+
+/*Telas grandes*/
+@media(max-width: 1280px){
+
+    #projetos{
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+    }
+
+    
+}
+
+
 
 
 
@@ -1007,4 +1203,53 @@ header{
 }
 
 }
+
+/*Tablets*/
+@media(min-width: 768px){
+     #linha2{
+        width: 600px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+}
+
+/*Laptops*/
+@media(min-width: 1024px){
+     #linha2{
+        width: 900px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+}
+
+/*Telas Grandes*/
+@media(min-width: 1280px){
+     #linha2{
+        width: 1110px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+}
+
+/*Monitores grandes*/
+@media(min-width: 1536px){
+     #linha2{
+        width: 1400px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto;
+
+    }
+
+}
+
 
