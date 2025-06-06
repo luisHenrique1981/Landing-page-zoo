@@ -133,6 +133,9 @@ header{
     font-size: 24px;
     background-color: #3DB12599;
     padding: 80px 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 
 #cta > h1 {
@@ -172,6 +175,10 @@ header{
         text-align: center;
     }
 
+    #cta > h1 {
+        font-size: 40px;
+    }
+
     #banner{
         display: block;
     }
@@ -183,6 +190,8 @@ header{
     #home{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #banner{
