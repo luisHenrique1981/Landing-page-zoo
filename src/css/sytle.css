@@ -1110,7 +1110,8 @@ header{
 }
 
 #linha2{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 1px;
     background-color: white;
     margin: 0 auto;
@@ -1145,6 +1146,37 @@ header{
     padding: 40px;
 }
 
+
+/*Celulares maiores*/
+@media(max-width: 640px){
+     #espaco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+     }
+
+     
+
+    #meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:60px;
+
+    }
+
+    #fim{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
+}
+
+}
+
+
 /*Celular*/
 @media(max-width: 450px) {
     #espaco{
@@ -1160,13 +1192,7 @@ header{
         text-align: justify;
     }
 
-    #linha2{
-    width: 300px;
-    height: 1px;
-    background-color: white;
-    margin: 0 auto;
 
-    }
 
     #meio{
     display: flex;
@@ -1192,87 +1218,5 @@ header{
 
 }
 
-/*Celulares maiores*/
-@media(max-width: 640px){
-     #espaco{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-     }
-
-     #linha2{
-        width: 500px;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-
-    }
-
-    #meio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:60px;
-
-    }
-
-    #fim{
-        display: flex;
-        flex-direction: column;
-        gap:40px;
-        align-items: center;
-}
-
-}
-
-/*Tablets*/
-@media(min-width: 768px){
-     #linha2{
-        width: 600px;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-
-    }
-
-}
-
-/*Laptops*/
-@media(min-width: 1024px){
-     #linha2{
-        width: 900px;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-
-    }
-
-}
-
-/*Telas Grandes*/
-@media(min-width: 1280px){
-     #linha2{
-        width: 1110px;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-
-    }
-
-}
-
-/*Monitores grandes*/
-@media(min-width: 1536px){
-     #linha2{
-        width: 1400px;
-        height: 1px;
-        background-color: white;
-        margin: 0 auto;
-
-    }
-
-}
 
 
